@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Silverline Detailing</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="brand">SILVERLINE</div>
+    <div class="hamburger" id="hamburger">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <div class="popup" id="popup">
+      <button class="book-now-btn" onclick="scrollToServices()">Book Now</button>
+    </div>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="section home-section">
+    <div class="home-content">
+      <h1>SILVERLINE<br/>DETAILING</h1>
+      <p>Premium detailing, right to your door</p>
+      <button class="main-book-btn" onclick="scrollToServices()">Book Now</button>
+    </div>
+    <div class="scroll-arrow">&#8595;</div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section services-section">
+    <h2 class="services-title">Services</h2>
+    <div class="underline"></div>
+
+    <!-- Vehicle Type Selector -->
+    <div class="vehicle-selector">
+      <button class="vehicle-btn active" onclick="selectVehicle('sedan')">Sedan/Mid SUV</button>
+      <button class="vehicle-btn" onclick="selectVehicle('large')">Large SUV</button>
+      <button class="vehicle-btn" onclick="selectVehicle('oversized')">Oversized</button>
+    </div>
+
+    <!-- Service Cards -->
+    <div class="service-cards">
+
+      <!-- Exterior Detail -->
+      <div class="service-box">
+        <h3>Exterior Detail</h3>
+        <p class="price" id="price" data-price="50">$50</p>
+        <button class="book-now-btn" id="exterior-link" onclick="openBooking()">Book Now</button>
+      </div>
+
+      <!-- Interior Detail -->
+      <div class="service-box">
+        <h3>Interior Detail</h3>
+        <p>Coming Soon!</p>
+      </div>
+
+      <!-- Complete Detail -->
+      <div class="service-box">
+        <h3>Complete Detail</h3>
+        <p>Coming Soon!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Before & After Gallery -->
+  <section id="gallery" class="section gallery-section">
+    <h2>Before & After</h2>
+    <div class="gallery-placeholder">
+      <div class="image-placeholder">Coming Soon!</div>
+      <div class="image-placeholder">Coming Soon!</div>
+    </div>
+  </section>
+
+  <!-- Footer / Contact -->
+  <footer class="section footer-section">
+    <h2>SILVERLINE DETAILING</h2>
+    <p>Premium detailing, right to your door</p>
+    <p>Contact: <a href="tel:9565517680">(956) 551-7680</a></p>
+    <p>Email: <a href="mailto:Silverlinedetailing@gmail.com">Silverlinedetailing@gmail.com</a></p>
+  </footer>
+
+  <!-- Section Dots -->
+  <div class="section-indicators">
+    <div class="dot active"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
